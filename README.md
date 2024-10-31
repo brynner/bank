@@ -135,11 +135,15 @@ To run tests, use the testing suite provided by the interviewer. Make sure your 
 simple-bank-api/
 ├── src/
 │   ├── api/
-│   │   ├── balance.js         # Handles GET /balance
-│   │   ├── event.js           # Handles POST /event
-│   │   └── reset.js           # Handles POST /reset
+│   │   ├── balance.js           # Handles GET /balance endpoint
+│   │   ├── event.js             # Handles POST /event endpoint
+│   │   └── reset.js             # Handles POST /reset endpoint
+│   ├── models/
+│   │   └── event.js             # Model for event data structure
 │   ├── services/
-│   │   └── accountService.js  # Business logic for handling account operations
-│   └── index.js               # Entry point for the server
+│   │   ├── accountService.js    # Business logic for account management
+│   │   ├── balanceService.js    # Business logic for balance handling
+│   │   └── eventService.js      # Business logic for event processing
+│   └── app.js                   # Main server setup and entry point
 └── package.json
 ```
