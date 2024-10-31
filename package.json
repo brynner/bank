@@ -1,0 +1,20 @@
+{
+  "name": "simple-bank-api",
+  "version": "1.0.0",
+  "description": "A simple bank API built with Node.js to handle basic account operations such as checking balance, depositing, withdrawing and transferring funds. This API is designed to be stateless, without using a database for persistence, storing data in memory instead.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
