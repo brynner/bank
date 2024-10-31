@@ -1,4 +1,6 @@
 const express = require('express');
+const balanceRouter = require('./api/balance');
+const eventRouter = require('./api/event');
 const resetRouter = require('./api/reset');
 
 const app = express();
@@ -11,6 +13,8 @@ let accounts = {};
 app.use(express.json());
 
 // Rotas, passando o objeto accounts como parâmetro
+app.use('/balance', balanceRouter(accounts));
+app.use('/event', eventRouter(accounts));
 app.use('/reset', resetRouter(accounts));
 
 // Inicia o servidor
