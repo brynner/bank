@@ -6,8 +6,9 @@ A simple bank API built with Node.js to handle basic account operations such as 
 - [Endpoints](#endpoints)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Testing](#testing)
 - [Project Structure](#project-structure)
+- [Testing](#testing)
+
 
 ## Endpoints
 
@@ -123,12 +124,6 @@ curl -X POST http://localhost:3000/event -H "Content-Type: application/json" -d 
 
 ---
 
-## Testing
-
-To run tests, use the testing suite provided by the interviewer. Make sure your server is running before executing the tests.
-
----
-
 ## Project Structure
 
 ```bash
@@ -147,3 +142,13 @@ simple-bank-api/
 │   └── app.js                   # Main server setup and entry point
 └── package.json
 ```
+
+---
+
+## Testing
+
+To run tests, use the testing suite provided by the interviewer. Make sure your server is running before executing the tests.
+
+The API was tested on ngrok, which pointed to a local tunnel. The tests were executed in Postman and then on https://ipkiss.pragmazero.com/.
+
+![tests](tests.png)
